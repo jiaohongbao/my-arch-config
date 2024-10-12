@@ -18,7 +18,8 @@
     "network",
     "temperature",
     "cpu",
-    "tray"
+    "tray",
+    "bluetooth"
   ],
   "include": [],
   "hyprland/window": {
@@ -45,10 +46,35 @@
     "icon-size": 18,
     "spacing": 10
   },
-  "clock": {
-    "format": "{:  %R   %a, %m月%e日}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
+//  "clock": {
+//      "format": "  {:%a}   {:%d-%m-%Y %H.%M}",
+//      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+//      "calendar":{
+//            "format":{
+//                "months":"<span color>='#ffead3'><b>{}</b></span>",
+//                "today":"<span color>='#ff6699'><b>{}</b></span>"
+//            }
+//      }
+      
+    //"format": "{:  %R   %a, %m %e }",
+    //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+//  },
+
+    "clock":{
+    "interval":60,
+    "tooltip":true,
+    "format":"{:%H:%M   %Y-%m-%d}",
+    "calendar":{
+            "format":{
+                "months":"<span color>='#ffead3'><b>{}</b></span>",
+                "today":"<span color>='#ff6699'><b>{}</b></span>"
+            }
+      },
+
+
+
+
+    },
   "temperature": {
     "thermal-zone": 1,
     "format": " {temperatureC}°C",
