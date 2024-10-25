@@ -18,7 +18,7 @@ yay -S hyprland hyprpaper
 
 hypr&waybar   ~/.config/
 
-wallpaper   <path of preload>
+Wallpaper   <path of preload>
 
 # restart and select hyprland
 
